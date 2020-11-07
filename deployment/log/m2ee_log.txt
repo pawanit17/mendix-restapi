@@ -1,0 +1,67 @@
+[rtlauncher:container$] INFO Container start took 25207. Ready to accept admin requests.
+Nov 07, 2020 7:04:54 PM org.hsqldb.persist.Logger logSevereEvent
+SEVERE: could not reopen database
+org.hsqldb.HsqlException: Database does not exists: D:\Development\Mendix\projects\mendix-restapi\deployment\data\database\hsqldb\default\default
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.persist.Logger.open(Unknown Source)
+	at org.hsqldb.Database.reopen(Unknown Source)
+	at org.hsqldb.Database.open(Unknown Source)
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDataSource.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDataSource.getConnection(Unknown Source)
+	at org.apache.commons.dbcp2.DataSourceConnectionFactory.createConnection(DataSourceConnectionFactory.java:83)
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:355)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:874)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:417)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:346)
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:134)
+	at com.mendix.connectionbus.connections.jdbc.ConnectionManager.getConnection(ConnectionManager.java:49)
+	at com.mendix.connectionbus.ConnectionBusInitializer.$anonfun$createConnection$1(ConnectionBusInitializer.scala:52)
+	at scala.util.Try$.apply(Try.scala:213)
+	at com.mendix.connectionbus.ConnectionBusInitializer.retry(ConnectionBusInitializer.scala:60)
+	at com.mendix.connectionbus.ConnectionBusInitializer.createConnection(ConnectionBusInitializer.scala:52)
+	at com.mendix.connectionbus.ConnectionBusInitializer.initialize(ConnectionBusInitializer.scala:42)
+	at com.mendix.connectionbus.ConnectionBusImpl.initialize(ConnectionBusImpl.java:364)
+	at com.mendix.basis.impl.MxRuntimeImplBase.initializeConnectionBus(MxRuntimeImplBase.java:500)
+	at com.mendix.basis.impl.MxRuntimeImplBase.start(MxRuntimeImplBase.java:314)
+	at com.mendix.m2ee.appcontainer.actions.StartAction.startRuntime(StartAction.java:48)
+	at com.mendix.m2ee.appcontainer.actions.StartAction.execute(StartAction.java:30)
+	at com.mendix.m2ee.appcontainer.server.handler.HttpAdminHandler.handle(HttpAdminHandler.java:129)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Nov 07, 2020 7:04:54 PM org.hsqldb.persist.Logger logInfoEvent
+INFO: Checkpoint start
+Nov 07, 2020 7:04:54 PM org.hsqldb.persist.Logger logInfoEvent
+INFO: checkpointClose start
+Nov 07, 2020 7:04:54 PM org.hsqldb.persist.Logger logInfoEvent
+INFO: checkpointClose synched
+Nov 07, 2020 7:04:54 PM org.hsqldb.persist.Logger logInfoEvent
+INFO: checkpointClose script done
+Nov 07, 2020 7:04:55 PM org.hsqldb.persist.Logger logInfoEvent
+INFO: checkpointClose end
+Nov 07, 2020 7:04:55 PM org.hsqldb.persist.Logger logInfoEvent
+INFO: Checkpoint end - txts: 1
+Nov 07, 2020 8:00:48 PM org.hsqldb.persist.Logger logInfoEvent
+INFO: Database closed
+
+

@@ -1,0 +1,12 @@
+Buildfile: D:\Development\Mendix\projects\mendix-restapi\deployment\build_core.xml
+
+compile:
+    [javac] Compiling 31 source files to D:\Development\Mendix\projects\mendix-restapi\deployment\run\bin
+
+package:
+      [jar] Building jar: D:\Development\Mendix\projects\mendix-restapi\deployment\model\bundles\project.jar
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+
+

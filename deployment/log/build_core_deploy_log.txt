@@ -1,0 +1,9 @@
+Buildfile: D:\Development\Mendix\projects\mendix-restapi\deployment\build_core.xml
+
+deploy:
+     [copy] Copying 33 files to D:\Development\Mendix\projects\mendix-restapi\deployment
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+
